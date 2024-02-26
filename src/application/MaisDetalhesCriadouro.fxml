@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apnDetalhesCriadouro" prefHeight="477.0" prefWidth="638.0" style="-fx-background-color: #CDD2CE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.MaisDetalhesCriadouroController">
+   <children>
+      <StackPane prefHeight="588.0" prefWidth="664.0">
+         <children>
+            <TabPane prefHeight="606.0" prefWidth="550.0" side="BOTTOM" tabClosingPolicy="UNAVAILABLE">
+               <tabs>
+                  <Tab style="-fx-background-color: #FFFAA3;" text="Tanques">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="646.0" prefWidth="575.0">
+                           <children>
+                              <TableView fx:id="tableTanque" layoutX="201.0" layoutY="211.0" prefHeight="339.0" prefWidth="262.0">
+                                <columns>
+                                  <TableColumn fx:id="columnIdTanque" prefWidth="129.0" text="ID" />
+                                  <TableColumn fx:id="columnCapacidadeTanque" prefWidth="132.0" text="Capacidade" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab style="-fx-background-color: #FFFAA3;" text="Produção">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TableView fx:id="tableProducao" layoutX="76.0" layoutY="210.0" prefHeight="335.0" prefWidth="492.0">
+                                 <columns>
+                                    <TableColumn fx:id="columnIdProducao" text="Quantidade" />
+                                    <TableColumn fx:id="columnEspecieProducao" prefWidth="117.59999084472656" text="Nome Especie" />
+                                    <TableColumn fx:id="columnIdTanqueProducao" prefWidth="102.4000244140625" text="IDTanque" />
+                                    <TableColumn fx:id="columnDataProducao" prefWidth="119.2000732421875" text="Data" />
+                                    <TableColumn fx:id="columnQntProducao" text="Id" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </TabPane>
+         </children>
+      </StackPane>
+      <Label layoutX="293.0" layoutY="36.0" text="Criadouro">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnVoltar" layoutX="22.0" layoutY="17.0" mnemonicParsing="false" onAction="#voltar" prefHeight="27.0" prefWidth="62.0" style="-fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: red;" text="Voltar" />
+      <TextField fx:id="inputCelular" layoutX="419.0" layoutY="101.0" style="-fx-border-color: black;" />
+      <Label fx:id="labelCel" layoutX="377.0" layoutY="106.0" text="Celular" />
+      <TextField fx:id="inputEndereco" layoutX="187.0" layoutY="141.0" style="-fx-border-color: black;" />
+      <TextField fx:id="inputRegistro" layoutX="419.0" layoutY="141.0" style="-fx-border-color: black;" />
+      <Label fx:id="labelRegistro" layoutX="352.0" layoutY="146.0" text="Nº Registro" />
+      <Label fx:id="labelEnd" layoutX="128.0" layoutY="146.0" text="Endereço" />
+      <TextField fx:id="inputEditarCpf" layoutX="187.0" layoutY="100.0" style="-fx-border-color: black;" />
+      <Label fx:id="labelCPF" layoutX="74.0" layoutY="105.0" text="CPF do Proprietário" />
+      <Button fx:id="btnAlterarSenha" layoutX="560.0" layoutY="12.0" mnemonicParsing="false" onAction="#mudarSenha" prefHeight="27.0" prefWidth="90.0" style="-fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: yellow;" text="Alterar Senha" />
+      <Label fx:id="labelAviso" layoutX="300.0" layoutY="75.0" visible="false" />
+   </children>
+</AnchorPane>

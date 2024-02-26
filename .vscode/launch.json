@@ -1,0 +1,30 @@
+{
+    // Use o IntelliSense para saber mais sobre os atributos possíveis.
+    // Focalizar para exibir as descrições dos atributos existentes.
+    // Para obter mais informações, acesse: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "application.Main",
+            "projectName": "aaaa_d9c1e726"
+        },
+        {
+            "type": "java",
+            "name": "Main(1)",
+            "request": "launch",
+            "mainClass": "visao.Main",
+            "projectName": "aaaa_d9c1e726",
+            "vmArgs": "--module-path \"C:/Users/Marcos/Downloads/openjfx-21.0.1_windows-x64_bin-sdk/javafx-sdk-21.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
+
+        }
+    ]
+}

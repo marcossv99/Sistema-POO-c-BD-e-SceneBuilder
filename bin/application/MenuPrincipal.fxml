@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:controller="application.MenuPrincipalController" fx:id="apnMenuPrincipal" prefHeight="386.0" prefWidth="635.0" style="-fx-background-color: #CDD2CE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button fx:id="btnEspeciesMenu" layoutX="80.0" layoutY="27.0" mnemonicParsing="false" onAction="#EspeciesMenuEvent" prefHeight="146.0" prefWidth="143.0" />
+      <Button fx:id="btnTanqueMenu" layoutX="247.0" layoutY="27.0" mnemonicParsing="false" onAction="#TanqueMenuEvent" prefHeight="146.0" prefWidth="143.0" />
+      <Button fx:id="btnRacaoMenu" layoutX="411.0" layoutY="27.0" mnemonicParsing="false" onAction="#RacaoMenuEvent" prefHeight="146.0" prefWidth="143.0" />
+      <Button fx:id="btnRemedioMenu" layoutX="156.0" layoutY="195.0" mnemonicParsing="false" onAction="#RemedioMenuEvent" prefHeight="146.0" prefWidth="143.0" />
+      <Button fx:id="btnProducaoMenu" layoutX="341.0" layoutY="195.0" mnemonicParsing="false" onAction="#ProducaoMenuEvent" prefHeight="146.0" prefWidth="143.0" />
+      <Button fx:id="btnUsuarioLogout" layoutX="14.0" layoutY="27.0" mnemonicParsing="false" onAction="#UsuarioLogoutEvent" prefHeight="27.0" prefWidth="51.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 10;" text="Sair" />
+      <ImageView fitHeight="60.0" fitWidth="62.0" layoutX="288.0" layoutY="86.0" onMouseClicked="#tanqueMenuEventImg">
+         <image>
+            <Image url="@../imagens/water-tank.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="62.0" layoutX="121.0" layoutY="86.0" onMouseClicked="#especieMenuEventImg">
+         <image>
+            <Image url="@../imagens/peixe.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="62.0" layoutX="454.0" layoutY="86.0" onMouseClicked="#racaoMenuEventImg">
+         <image>
+            <Image url="@../imagens/comida-de-peixe.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="62.0" layoutX="197.0" layoutY="250.0" onMouseClicked="#remedioMenuEventImg">
+         <image>
+            <Image url="@../imagens/frasco-de-remedio.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="60.0" fitWidth="62.0" layoutX="382.0" layoutY="250.0" onMouseClicked="#producaoMenuEventImg">
+         <image>
+            <Image url="@../imagens/rede-de-pesca.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="labelEspeciesBtn" layoutX="132.0" layoutY="48.0" text="Espécie" />
+      <Label fx:id="labelTanqueBtn" layoutX="297.0" layoutY="48.0" text="Tanque" />
+      <Label fx:id="labelRacaoBtn" layoutX="470.0" layoutY="48.0" text="Ração" />
+      <Label fx:id="labelRemedioBtn" layoutX="206.0" layoutY="214.0" text="Remédio" />
+      <Label fx:id="labelProducaoBtn" layoutX="389.0" layoutY="214.0" text="Produção" />
+      <Button fx:id="btnPerfil" layoutX="570.0" layoutY="27.0" mnemonicParsing="false" onAction="#Perfil" prefHeight="27.0" prefWidth="51.0" style="-fx-background-color: transparent; -fx-border-color: black; -fx-border-radius: 10;" text="Perfil" />
+   </children>
+</AnchorPane>

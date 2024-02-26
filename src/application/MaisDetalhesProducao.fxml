@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:controller="application.MaisDetalhesEspecieController" fx:id="apnDetalhesProducao" prefHeight="300.0" prefWidth="300.0" style="-fx-background-color: #CDD2CE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <TextField fx:id="inputEditarQuantidadeProducaoForm" layoutX="109.0" layoutY="102.0" prefHeight="27.0" prefWidth="46.0" style="-fx-border-color: black;" />
+      <Button fx:id="btnVoltarMenuRelatorioProducao" layoutX="19.0" layoutY="16.0" mnemonicParsing="false" onAction="#voltarMenuRelatorioProducaoEvent" prefHeight="27.0" prefWidth="62.0" style="-fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: blue;" text="Voltar" />
+      <TextField fx:id="inputEditarDataProducaoForm" layoutX="109.0" layoutY="145.0" prefHeight="27.0" prefWidth="31.0" style="-fx-border-color: black;" />
+      <Label fx:id="labelEditarEspecieComprimentoideal121" layoutX="37.0" layoutY="107.0" text="Quantidade" />
+      <Label fx:id="labelEditarEspeciePesoIdeal111" layoutX="73.0" layoutY="150.0" text="Data" />
+      <Label layoutX="112.0" layoutY="43.0" text="Produção">
+         <font>
+            <Font size="18.0" />
+         </font></Label>
+      <Label fx:id="labelEditarEspecieTempoMin11111" layoutX="56.0" layoutY="194.0" text="Especie" />
+      <Label fx:id="labelEditarEspecieComprimentoideal1211" layoutX="163.0" layoutY="107.0" text="(kg)" />
+      <TextField fx:id="inputEditarDataProducaoForm1" layoutX="193.0" layoutY="145.0" prefHeight="27.0" prefWidth="40.0" style="-fx-border-color: black;" />
+      <TextField fx:id="inputEditarDataProducaoForm2" layoutX="151.0" layoutY="145.0" prefHeight="27.0" prefWidth="31.0" style="-fx-border-color: black;" />
+      <Label fx:id="labelEditarEspeciePesoIdeal1111" layoutX="142.0" layoutY="145.0" text="/">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelEditarEspeciePesoIdeal11111" layoutX="184.0" layoutY="145.0" text="/">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <ComboBox fx:id="boxEspecies" layoutX="107.0" layoutY="191.0" prefWidth="150.0" />
+   </children>
+</AnchorPane>

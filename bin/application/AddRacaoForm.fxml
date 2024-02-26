@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="apnAddRacao" prefHeight="450.0" prefWidth="350.0" style="-fx-background-color: #CDD2CE;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddRacaoFormController">
+   <children>
+      <Label layoutX="57.0" layoutY="94.0" text="Nome" />
+      <Label layoutX="99.0" layoutY="36.0" prefHeight="27.0" prefWidth="151.0" text="Adicionar Ração">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textNome" layoutX="100.0" layoutY="89.0" style="-fx-border-color: black;" />
+      <Label layoutX="57.0" layoutY="134.0" text="Marca" />
+      <TextField fx:id="textMarca" layoutX="100.0" layoutY="129.0" prefHeight="27.0" prefWidth="71.0" style="-fx-border-color: black;" />
+      <Label layoutX="59.0" layoutY="168.0" text="Preço" />
+      <TextField fx:id="textPreco" layoutX="100.0" layoutY="163.0" prefHeight="27.0" prefWidth="71.0" style="-fx-border-color: black;" />
+      <Label layoutX="176.0" layoutY="168.0" text="(kg)" />
+      <Button fx:id="btnAdicionar" layoutX="195.0" layoutY="376.0" mnemonicParsing="false" onAction="#adicionar" prefHeight="34.0" prefWidth="71.0" style="-fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: green;" text="Adicionar" />
+      <Button fx:id="btnVoltar" layoutX="84.0" layoutY="376.0" mnemonicParsing="false" onAction="#voltar" prefHeight="34.0" prefWidth="71.0" style="-fx-border-radius: 10; -fx-background-color: transparent; -fx-border-color: black;" text="Voltar" />
+      <ComboBox fx:id="boxEspecie" layoutX="98.0" layoutY="199.0" onAction="#comboxEspecies" prefWidth="150.0" />
+      <Label layoutX="42.0" layoutY="201.0" text="Especies" />
+      <Label fx:id="labelAviso" layoutX="80.0" layoutY="71.0" />
+      <TableView fx:id="tableEspecie" layoutX="74.0" layoutY="232.0" prefHeight="124.0" prefWidth="200.0">
+         <columns>
+            <TableColumn fx:id="columnEspecie" prefWidth="199.0" text="Nome da Especie" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>
